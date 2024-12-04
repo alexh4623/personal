@@ -1,0 +1,10 @@
+# developer-role-staging.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: staging
+  name: developer
+rules:
+  - apiGroups: [""] #core api
+    resources: ["*"] #all resources
+    verbs: ["*"] # (get list create update , all actions)
